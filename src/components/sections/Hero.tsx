@@ -48,7 +48,11 @@ export const Hero: React.FC = () => {
               <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => window.location.href = '#projects'}>
                 View Projects
               </Button>
-              <Button variant="secondary" icon={<Download size={18} />}>
+              <Button
+                variant="secondary"
+                icon={<Download size={18} />}
+                onClick={() => window.open('https://drive.google.com/file/d/175YjiPudY60i6PQAruH9_lsm8V75I7AQ/view?usp=sharing', '_blank')}
+              >
                 Download Resume
               </Button>
             </motion.div>

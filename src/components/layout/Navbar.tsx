@@ -57,7 +57,11 @@ export const Navbar: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <Button variant="primary" size="sm">
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={() => window.open('https://drive.google.com/file/d/175YjiPudY60i6PQAruH9_lsm8V75I7AQ/view?usp=sharing', '_blank')}
+            >
               Resume
             </Button>
           </nav>
@@ -94,7 +98,11 @@ export const Navbar: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <Button variant="primary" size="md">
+            <Button
+              variant="primary"
+              size="md"
+              onClick={() => window.open('https://drive.google.com/file/d/175YjiPudY60i6PQAruH9_lsm8V75I7AQ/view?usp=sharing', '_blank')}
+            >
               Download Resume
             </Button>
           </motion.div>

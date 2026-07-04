@@ -7,32 +7,32 @@ const categories = [
   {
     title: 'Programming',
     icon: <Code2 size={18} />,
-    skills: ['Python', 'C']
+    skills: ['Python', 'C', 'Java', 'JavaScript', 'HTML', 'CSS']
   },
   {
     title: 'Web Dev',
     icon: <Layout size={18} />,
-    skills: ['HTML', 'CSS', 'JavaScript', 'React']
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'node.js', 'Next.js', 'Tailwind CSS', 'Bootstrap']
   },
   {
     title: 'Database',
     icon: <Database size={18} />,
-    skills: ['SQL', 'MySQL']
+    skills: ['SQL', 'MySQL', 'MongoDB', 'Firebase']
   },
   {
     title: 'Core Tech',
     icon: <Server size={18} />,
-    skills: ['DSA', 'OOP', 'DBMS', 'Operating Systems']
+    skills: ['DSA', 'OOP', 'DBMS', 'Operating Systems', 'Networking',]
   },
   {
     title: 'Data & AI',
     icon: <Brain size={18} />,
-    skills: ['Data Analysis', 'Excel', 'Basic ML', 'Pandas', 'NumPy']
+    skills: ['Data Analysis', 'Excel', 'Basic ML', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'NLP', 'LLMs']
   },
   {
     title: 'Tools',
     icon: <Wrench size={18} />,
-    skills: ['Git', 'GitHub']
+    skills: ['Git', 'GitHub', 'VS Code', 'Figma', 'Canva']
   }
 ];
 
