@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-moon-bg: #210635;
+  --color-moon-surface: #420D4B;
+  --color-moon-primary: #6667AB;
+  --color-moon-accent: #7B337E;
+  --color-moon-highlight: #F5D5E0;
+  --color-moon-muted: rgba(245, 213, 224, 0.7);
+
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-code: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-moon-bg text-white font-body overflow-x-hidden antialiased selection:bg-moon-primary selection:text-white;
+  }
+  
+  @media (pointer: fine) {
+    body, a, button {
+      cursor: none !important;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+  
+  /* Smooth Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-moon-bg;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-moon-surface rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-moon-primary;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-moon-surface/40 backdrop-blur-md border border-white/10 shadow-lg;
+  }
+  .glass-card {
+    @apply bg-moon-surface/50 backdrop-blur-lg border border-white/5 rounded-2xl shadow-xl transition-all duration-300;
+  }
+  .glass-card:hover {
+    @apply -translate-y-1 shadow-2xl border-white/10;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-moon-highlight via-moon-primary to-moon-accent bg-clip-text text-transparent;
+  }
+}
